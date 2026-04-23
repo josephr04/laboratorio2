@@ -18,7 +18,7 @@ def test_login_exitoso(driver):
     login.ingresar_credenciales("standard_user", "secret_sauce")
     login.click_login()
 
-    assert "inventory.html" in driver.current_url, (
+    assert "pagina_falsa.html" in driver.current_url, (
         f"Se esperaba llegar a inventory.html pero la URL fue: {driver.current_url}"
     )
 
