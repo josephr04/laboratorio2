@@ -50,7 +50,7 @@ jobs:
       #    "if: always()" garantiza que se guarda incluso si las pruebas fallan
       - name: Guardar reporte HTML como evidencia
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: reporte-selenium
           path: reporte_final.html
